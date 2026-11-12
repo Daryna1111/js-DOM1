@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator-card">
+    <h1 class="calculator-title">Калькулятор</h1>
+
+    <div class="inputs-group">
+      <label class="input-label">
+        Перше число
+        <input type="text" id="first-number" placeholder="Введіть число">
+      </label>
+
+      <label class="input-label">
+        Друге число
+        <input type="text" id="second-number" placeholder="Введіть число">
+      </label>
+    </div>
+
+    <div class="buttons-group">
+      <button type="button" class="op-btn" data-operation="add">+</button>
+      <button type="button" class="op-btn" data-operation="subtract">−</button>
+      <button type="button" class="op-btn" data-operation="multiply">×</button>
+      <button type="button" class="op-btn" data-operation="divide">÷</button>
+    </div>
+
+    <div class="result-box" id="result-box">
+      <span class="result-label">Результат:</span>
+      <p class="result-value" id="result-output">—</p>
+    </div>
+
+    <button type="button" class="clear-btn" id="clear-btn">Очистити</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
